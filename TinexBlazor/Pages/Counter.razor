@@ -1,0 +1,26 @@
+﻿@page "/counter"
+@inherits TinexBlazor.Scripts.WordsCheckerController
+
+<PageTitle>Counter</PageTitle>
+
+<h2>Check English word</h2>
+<div class="d-flex flex-row">
+    <p>Progress: @Progress   </p>
+    <p>Attempts: @Attempts   </p>
+    <p>Accuracy: @Accuracy %</p>
+</div>
+
+<p>Original: @CurrentWord</p>
+<p>Translation: @CurrentTranslation</p>
+@if (IsChecked)
+{
+    <button class="btn btn-primary" @onclick="WrongAnswer">Wrong</button>
+    <button class="btn btn-primary" @onclick="CorrectAnswer">Correct</button>
+}
+else
+{
+    <button class="btn btn-primary" @onclick="ShowAnswer">Show</button>
+}
+
+
+
