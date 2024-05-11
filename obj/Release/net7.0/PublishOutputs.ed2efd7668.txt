@@ -1,0 +1,3 @@
+/home/wirbel/RiderProjects/TinexBlazor/release/firebase.json
+/home/wirbel/RiderProjects/TinexBlazor/release/firestore.indexes.json
+/home/wirbel/RiderProjects/TinexBlazor/release/web.config
